@@ -20,13 +20,13 @@ HELO. WELCOME. PLZ USE THESE SCRIPTS TO MAKE YOUR DECK BIGGER, FASTER, HARDER, S
 
 1. Open Desktop mode, Open up Konsole and set a password for the deck user: `passwd`
 
-NOTE: At this point, do yourself a favor and `sudo systemctl enable sshd --now` so that you can ssh in and stop using that shit steamos keyboard.  
+NOTE: At this point, do yourself a favor and `sudo systemctl enable sshd --now` so that you can ssh in and stop using that shit steamos keyboard.
 
 2. `sudo steamos-readonly disable;sudo pacman-key --init;sudo pacman-key --populate archlinux`
 
 3. `mkdir -p ~/.local`
 
-4. `git clone https://github.com/TheRealAlexV/steamdeck-scripts.git ~/.local/trav-steamdeck-scripts`
+4. `git clone https://github.com/drashna/steamdeck-scripts.git ~/.local/trav-steamdeck-scripts`
 
 5. Put the following in your `~/.bash_profile`:
 ```
