@@ -10,11 +10,11 @@ SCRIPTDIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 . $SCRIPTDIR/config.sh
 
 echo " Trav-Scripts Menu: github.com/TheRealAlexV/steamdeck-scripts"
-echo "   1) Post Update Init    |   2) SSHd Configuration   |   3) Setup Sleep Inhibitor "
-echo "   4) BTRFS Utilities     |   5) Backup Packages      |   6) Restore Packages      "
-echo "   7) Setup Joycon Cfgs   |   8) Setup UFW            |   9) Fix Lutris Flatpak    "
-echo "  10) Kill Windows Emus   |  11) Fix pipewire Audio   |  12) Sudo NoPasswd         "
-echo "  13) auto-cpufreq        |  14) Dock Resolution Fix  |                            "
+echo "   1) Post Update Init    |   2) SSHd Configuration  |   3) Setup Sleep Inhibitor  "
+echo "   4) BTRFS Utilities     |   5) Backup Packages     |   6) Restore Packages       "
+echo "   7) Setup Joycon Cfgs   |   8) Setup UFW           |   9) Fix Lutris Flatpak     "
+echo "  10) Kill Windows Emus   |  11) Fix pipewire Audio  |  12) Sudo NoPasswd          "
+echo "  13) auto-cpufreq        |  14) Dock Resolution Fix |  15) Fix KRFB               "
 echo "                          |                           |                            "
 echo "                          |                           |                            "
 echo "  22) Install QMK Tools   |  23) Enable pacman cmds   |  24) Cleanup pacman cmds   "
@@ -64,6 +64,9 @@ case $n in
             ;;
         14)
             . $FUNCTIONS/dock-resolution-fix.sh
+            ;;
+        15)
+            . $FUNCTIONS/fix_krfb.sh
             ;;
         22)
             . $FUNCTIONS/install_qmk.sh
